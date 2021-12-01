@@ -8,4 +8,7 @@ This is my first survey form using HTML and CSS.
 ```
 
 ## Product Preview
-![Product Preview](product.png)
+```
+link: https://ayacomputer.github.io/Survey-Form/
+![Product Preview](./assets/product.png))
+```
