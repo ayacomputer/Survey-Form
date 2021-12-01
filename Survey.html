@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FCC:Survey　Form</title>
+    <link rel="stylesheet" href="Survey.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1 id="title" class="text-center">Web Developer Survey Form</h1>
+            <p id="description" class="text-center">Thank you for taking your time to help me improve</p>
+        </header>
+
+        <form id="survey-form">
+
+            <div class="form-group">
+                <label id="name-label">Name</label>
+                <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+
+            </div>
+
+            <div class="form-group">
+                <label id="email-label">Email</label>
+                <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <label id="number-label">Age</label>
+                <input id="number" type="number" name="age" min="10" max="99" class="form-control" placeholder="Age"
+                    required>
+            </div>
+
+            <div class="form-group">
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="form-control" required>
+                    <option disabled selected value>Select current role</option>
+                    <option value="Front-end">Front-end Developer</option>
+                    <option value="Back-end">Back-end Developer</option>
+                    <option value="Full-stack">Full Stack Developer</option>
+                    <option value="Product-manager">Product-manager</option>
+                    <option value="other">Other</option>
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <p>How did you learn to code?</p>
+
+
+                <label>
+                    <input name="user-experience" value="university" type="radio" class="input-radio" checked />
+                    University
+                </label>
+                <label>
+                    <input name="user-experience" value="bootcamp" type="radio" class="input-radio" />
+                    Bootcamp
+                </label>
+                <label>
+                    <input name="user-experience" value="self-study" type="radio" class="input-radio" />
+                    Self-study
+                </label>
+
+            </div>
+
+            <div class="form-group">
+                <p>Why did you decide to be a developer?</p>
+                <select id="user-reason" name="reason" class="form-control" required>
+                    <option disabled selected value>Select your reason</option>
+                    <option value="demand">High demand</option>
+                    <option value="career">Career options</option>
+                    <option value="remote">Remote work</option>
+                    <option value="salary">High salary</option>
+                    <option value="problem-solving">Problem-solving</option>
+                    <option value="creative">Creative outlet</option>
+                    <option value="always-learning">Always learning</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p> Which language or languages do you like?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+                <label>
+                    <input name="prefer" value="HTML" type="checkbox" class="input-checkbox" checked>
+                    HTML
+                </label>
+                <label>
+                    <input name="prefer" value="CSS" type="checkbox" class="input-checkbox">
+                    CSS
+                </label>
+                <label>
+                    <input name="prefer" value="Javascript" type="checkbox" class="input-checkbox">
+                    Javascript
+                </label>
+                <label>
+                    <input name="prefer" value="PHP" type="checkbox" class="input-checkbox">
+                    PHP
+                </label>
+                <label>
+                    <input name="prefer" value="Python" type="checkbox" class="input-checkbox">
+                    Python
+                </label>
+                <label>
+                    <input name="prefer" value="Swift" type="checkbox" class="input-checkbox">
+                    Swift
+                </label>
+                <label>
+                    <input name="prefer" value="Java" type="checkbox" class="input-checkbox">
+                    Java
+                </label>
+                <label>
+                    <input name="prefer" value="Ruby" type="checkbox" class="input-checkbox">
+                    Ruby
+                </label>
+                <label>
+                    <input name="prefer" value="C++" type="checkbox" class="input-checkbox">
+                    C++
+                </label>
+                <label>
+                    <input name="prefer" value="C#" type="checkbox" class="input-checkbox">
+                    C#
+                </label>
+                <label>
+                    <input name="prefer" value="Go" type="checkbox" class="input-checkbox">
+                    Go
+                </label>
+                <label>
+                    <input name="prefer" value="Typescript" type="checkbox" class="input-checkbox">
+                    Typescript
+                </label>
+
+
+
+            </div>
+            <div class="form-group">
+                <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment"
+                    placeholder="Enter your commment here..."></textarea>
+
+            </div>
+
+            <div class="form-group">
+                <button type="submit" id="submit" class="submitBtn">Submit</button>
+            </div>
+            　
+        </form>
+    </div>
+
+</body>
+
+
+<footer>
+    <div id="contact">
+        Survey Page for<br>FreeCodeCamp Responsive Web Design Certification<br>
+        Coded by <a id="mycontact" href="https://codepen.io/ayako0111">Ayako Woollan</a>
+    </div>
+</footer>
+
+</html>
